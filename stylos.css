@@ -23,6 +23,24 @@ header{
     width: 98%;
     height: 50px;
 }
+
+.fixed-header{
+    position: fixed;
+    width: 97,5%;
+    text-align: center;
+    z-index: 10000;
+    padding: 20px 0;
+}
+
+.header .titulo{
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
 .logo{
     display: flex;
     margin-right: 20px;
@@ -33,6 +51,23 @@ header{
 }
 header .logo img{
     max-width: 100px;
+    animation: rotate 1s linear;
+}
+@keyframes rotate {
+    form{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes rotatelogo {
+    form{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
 }
 
 main{
@@ -100,6 +135,37 @@ fieldset label {
 fieldset input[type="checkbox"], fieldset input[type="radio"]{
     margin-right: 10px;
 
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 20px;
+    height: 40px;
+    color: rgb(45, 31, 58);
+    border-radius: 40%;
+    font-size: 30px;
+    
+}
+.back-to-top:hover{
+    background-color: white;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: underline;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    
 }
 
 .sticky-footer {
