@@ -168,6 +168,22 @@ nav ul li a {
     
 }
 
+section{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+
+}
+.acerca-de{
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid blueviolet;
+}
+article{
+    text-align: center;
+}
+
 .sticky-footer {
     background-color: rgb(91, 148, 185);
     padding: 10px;
