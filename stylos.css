@@ -34,6 +34,15 @@ header{
 header .logo img{
     max-width: 100px;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    flex-grow: 1;
+    margin-top: 7%;
+}
+
 .imagen{
     width: 300px;
     height: 300px;
@@ -42,7 +51,58 @@ header .logo img{
     margin: 0 auto;
     margin-top: 10%;
 }
-footer {
+
+table{
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin: 20px;
+}
+th, td {
+    border: 3px solid black;
+    padding: 8px;
+    text-align: left;
+    
+}
+form{
+    margin: 10px;
+    padding: 10px;
+}
+form label{
+    display: block;
+    margin: 5px;
+}
+form input{
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 18px;
+}
+form input, label{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+fieldset{
+    border-radius: 2px solid beige;
+    padding: 10px 15px;
+    width: 60%;
+}
+
+fieldset label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: black;
+}
+fieldset input[type="checkbox"], fieldset input[type="radio"]{
+    margin-right: 10px;
+
+}
+
+.sticky-footer {
     background-color: rgb(91, 148, 185);
     padding: 10px;
     margin-top: 20px;
