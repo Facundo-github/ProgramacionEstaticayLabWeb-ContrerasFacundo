@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylos.css">
+    <title>Juego</title>
+    <script src="piedraPapelTijera.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">PAGINA PRINCIPAL</a></li>
+        </ul>
+    </nav>
+
+    <header class="fixed-header">
+        <div class="titulo">
+            <h1> Juego </h1>
+        </div>
+        <div class="logo">
+            <img src="logocurza.png" alt="logo">
+        </div>
+    </header>
+    
+    <h2>
+        <img src="juego.png" class="img" alt="juego">
+    </h2>
+
+
+    <main class="juego">
+        <div class="subtituloJuego">
+            <h2>Piedra, Papel o Tijera: </h2>
+        </div>
+        <div class="jugada">
+            <p>
+                <h3>Selecciona tu jugada:</h3>
+            </p>
+            <button onclick="jugar('piedra')">Piedra</button>
+            <button onclick="jugar('papel')">Papel</button>
+            <button onclick="jugar('tijera')">Tijera</button>
+
+            <p id="resultado"></p>
+            <p>
+                <h4>Jugada del Sistema:</h4>
+            </p>
+            </p class="texto-mayuscula"> 
+                <span id="jugadaSistema"></span>
+            </p>
+            <button id="reintentar" style="display: none;" onclick="reiniciarJuego()">Intentar Nuevamente</button>
+
+        </div>
+
+        
+    </main>
+
+    <a href="#" class="back-to-top">&#8679;</a>
+
+
+    <footer id="pie" class="sticky-footer">
+        <p>
+            CURZA
+        </p>
+        <p>
+            Monseñor Esandi y Ayacucho
+        </p>
+        <p>
+            Viedma (8500)
+        </p>
+        <p>
+            Rio Negro, Argentina
+        </p>
+        <p>
+            &copy;Todos los derechos reservados &copy;
+        </p>
+
+    </footer>
+
+</body>
+</html>
